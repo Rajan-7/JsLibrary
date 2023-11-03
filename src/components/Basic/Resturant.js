@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from "react";
+import "./style.css";
+import MenuCard from "./MenuCard";
+import Menu from "./MenuApi";
 
 const Resturant = () => {
+  const [MenuData,setMenuData] = useState(Menu);
+
   return (
     <>
-      YO Restu!!
+      <MenuCard menuData={MenuData} />
     </>
-  )
-}
+  );
+};
 
-export default Resturant
+export default Resturant;
