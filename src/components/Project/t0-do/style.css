@@ -32,7 +32,7 @@ html {
     }
 
     & .addItems {
-      margin-top: 0.5rem;
+      margin-top: 1.5rem;
       text-align: center;
       display: flex;
       align-items: center;
@@ -40,7 +40,7 @@ html {
       border: 1px solid transparent;
 
       & input {
-        height: 5rem;
+        height: 4.5rem;
         padding: 0 1rem;
         min-width: 40rem;
         border: none;
@@ -56,14 +56,14 @@ html {
       & .plus {
         & .fas {
           font-size: 1.8rem;
-          margin-left: -2.5rem;
+          margin-left: -3rem;
           background-color: #fff;
         }
       }
     }
 
     & .showItems {
-      margin: 1.5rem 0;
+      margin: 2.5rem 0;
       background-color: #5272f2;
       min-width: 40rem;
       border-radius: 0.5rem;
@@ -74,7 +74,7 @@ html {
 
       & .eachItems {
         cursor: pointer;
-        height: 5rem;
+        height: 4.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -93,7 +93,8 @@ html {
 
         &:hover {
           background-color: #fff;
-          color: blue;
+          color: #164fdd;
+
           & .fa-edit {
             color: #1aacac;
           }
@@ -109,7 +110,77 @@ html {
 
       & .btn {
         border: none;
+        height: 5rem;
+        width: 16rem;
+        cursor: pointer;
         background-color: #fff;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+
+        & span {
+          font-size: 1.4rem;
+          letter-spacing: 0.1rem;
+          text-transform: uppercase;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      & .effect04 {
+        --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+        display: var(--uismLinkDisplay);
+        outline: 0.2rem solid black;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+          background-color: #164fdd;
+        }
+
+        &::before,
+        span {
+          margin: auto;
+          transition-timing-function: linear;
+          transition-duration: 0.4s;
+        }
+
+        &:hover span {
+          transform: translateY(-400%);
+          -webkit-transform: translateY(-400%);
+          -moz-transform: translateY(-400%);
+          -ms-transform: translateY(-400%);
+          -o-transform: translateY(-400%);
+        }
+
+        &::before {
+          content: attr(data-sm-link-text);
+          position: absolute;
+          left: 25%;
+          top: 35%;
+          transform: translateY(500%);
+          -webkit-transform: translateY(500%);
+          -moz-transform: translateY(500%);
+          -ms-transform: translateY(500%);
+          -o-transform: translateY(500%);
+        }
+
+        &:hover::before {
+          transform: translateY(0%);
+          -webkit-transform: translateY(0%);
+          -moz-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+          -o-transform: translateY(0%);
+        }
+
+        &::before {
+          color: #fff;
+          letter-spacing: .05rem;
+        }
       }
     }
   }
