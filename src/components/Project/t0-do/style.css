@@ -18,7 +18,7 @@ html {
   & .todo-subcontainer {
     text-align: center;
     width: auto;
-    margin: 14rem 0rem 0rem 0rem;
+    margin-top: 14rem;
 
     & img {
       height: 10rem;
@@ -37,12 +37,13 @@ html {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border: 1px solid transparent;
+      border: 1px solid black;
 
       & input {
         height: 4.5rem;
         padding: 0 1rem;
         min-width: 40rem;
+        outline: none;
         border: none;
         padding: 0 1rem;
         font-size: 1.8rem;
@@ -64,20 +65,21 @@ html {
 
     & .showItems {
       margin: 2.5rem 0;
-      background-color: #5272f2;
       min-width: 40rem;
-      border-radius: 0.5rem;
-      -webkit-border-radius: 0.5rem;
-      -moz-border-radius: 0.5rem;
-      -ms-border-radius: 0.5rem;
-      -o-border-radius: 0.5rem;
 
       & .eachItems {
         cursor: pointer;
+        margin: 1rem 0;
         height: 4.5rem;
+        background-color: #5272f2;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
 
         & h3 {
           padding-left: 1rem;
@@ -179,7 +181,7 @@ html {
 
         &::before {
           color: #fff;
-          letter-spacing: .05rem;
+          letter-spacing: 0.05rem;
         }
       }
     }
