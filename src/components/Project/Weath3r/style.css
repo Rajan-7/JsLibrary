@@ -1,0 +1,10 @@
+.temp-four-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    & .temp-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
