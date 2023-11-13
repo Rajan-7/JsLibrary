@@ -9,11 +9,15 @@ html {
 }
 
 :root {
-    --widget-background:#fafafa;
-  --btn-hover--color: #1F8A70;
   --text-color: #fff;
   --bg-color: #2f2f2f;
-  --btn-background: #33b249;
+  --date-info-bg: #70c1b3;
+  --btn-background: #048b9c;
+  --btn-hover--color: #17b8ce;
+  --widget-background: #fafafa;
+  --temperature-info--bg: #080705;
+  --temp-icon--left--color: #70c1b3;
+  --temp-des-right--color:#000;
 }
 
 body {
@@ -26,8 +30,8 @@ body {
 
 /* search section */
 .search {
-  margin-top: -15rem;
-  margin-bottom: 5rem;
+  margin-top: -10rem;
+  margin-bottom: 5.5rem;
   display: flex;
   justify-content: center;
 
@@ -36,17 +40,20 @@ body {
     & .input {
       width: 100%;
       height: 3.2rem;
-      padding-left: 1.5rem;
+      padding: 1.6rem;
       line-height: 1.5;
       font-size: 1.8rem;
       outline: none;
       border: none;
       border-top-left-radius: 0.5rem;
       border-bottom-left-radius: 0.5rem;
+
+      &:focus {
+        color: #00b4cc;
+      }
     }
   }
   & .search-button {
-    
     & .btn {
       cursor: pointer;
       width: 8rem;
@@ -54,8 +61,8 @@ body {
       font-size: 1.8rem;
       color: var(--text-color);
       background-color: var(--btn-background);
-      border-top-right-radius: 0.5rem;
-      border-bottom-right-radius: 0.5rem;
+      border-top-right-radius: 0.6rem;
+      border-bottom-right-radius: 0.6rem;
 
       &:hover {
         background-color: var(--btn-hover--color);
@@ -65,9 +72,95 @@ body {
 }
 
 /* widget section */
-.widget{
-    display: flex;
-    height: 40rem;
+.widget {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  height: 45rem;
+  width: 65rem;
+  background-color: var(--widget-background);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+
+  & .weather-icon {
+    height: 20rem;
     width: 65rem;
-    background-color: var(--widget-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    font-size: 10rem;
+  }
+
+  & .temperature-info {
+    flex: 0 0 70%;
+    height: 16rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--temperature-info--bg);
+
+    & .temp-degree {
+      flex: 0 0 40%;
+      padding: 1rem;
+      font-size: 6.5rem;
+      color: var(--text-color);
+    }
+    & .temp-description {
+      flex: 0 0 60%;
+      color: var(--text-color);
+
+      & .condition {
+        font-size: 3.5rem;
+      }
+
+      & .location {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  & .date-info {
+    flex: 0 0 30%;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    background: var(--date-info-bg);
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  & .temp-four-section {
+    flex: 0 0 100%;
+    padding: 5% 0;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    & .temp-section,
+    .temp-icon-left {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+      align-items: center;
+    }
+
+    & .temp-icon-left {
+      color: var(--temp-icon--left--color);
+      font-size: 2.5rem;
+    }
+
+    & .temp-section .temp-des-right {
+      font-size: 1.5rem;
+      text-align: left;
+      color: var(--temp-des-right--color);
+    }
+  }
 }

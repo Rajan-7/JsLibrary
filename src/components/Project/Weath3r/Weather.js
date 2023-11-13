@@ -40,43 +40,39 @@ const Weather = () => {
         {/* Four temp section */}
         <div className="temp-four-section">
           <div className="temp-section">
-            <div className="temp-icon">
-              <p className={"wi wi-day-rain"}></p>
+            <div className="temp-icon-left">
+              <p className={"wi wi-sunset"}></p>
+              <p className="temp-des-right">
+                19:19PM
+                <br />
+                Sunset
+              </p>
             </div>
-            <div className="temp-des">
-              19:19PM
-              <br />
-              Rain
-            </div>
-          </div>
-          <div className="temp-section">
-            <div className="temp-icon">
-              <p className={"wi wi-day-rain"}></p>
-            </div>
-            <div className="temp-des">
-              19:19PM
-              <br />
-              Rain
+            <div className="temp-icon-left">
+              <p className={"wi wi-humidity"}></p>
+              <p className="temp-des-right">
+                Humidity
+                <br />
+                g/m^3
+              </p>
             </div>
           </div>
           <div className="temp-section">
-            <div className="temp-icon">
-              <p className={"wi wi-day-rain"}></p>
+            <div className="temp-icon-left">
+              <p className={"wi wi-barometer"}></p>
+              <p className="temp-des-right">
+                Pressure
+                <br />
+                Pa
+              </p>
             </div>
-            <div className="temp-des">
-              19:19PM
-              <br />
-              Rain
-            </div>
-          </div>
-          <div className="temp-section">
-            <div className="temp-icon">
-              <p className={"wi wi-day-rain"}></p>
-            </div>
-            <div className="temp-des">
-              19:19PM
-              <br />
-              Rain
+            <div className="temp-icon-left">
+              <p className={"wi wi-strong-wind"}></p>
+              <p className="temp-des-right">
+                Speed
+                <br />
+                m/s
+              </p>
             </div>
           </div>
         </div>
