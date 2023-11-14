@@ -17,7 +17,7 @@ html {
   --widget-background: #fafafa;
   --temperature-info--bg: #080705;
   --temp-icon--left--color: #70c1b3;
-  --temp-des-right--color:#000;
+  --temp-des-right--color: #000;
 }
 
 body {
@@ -26,6 +26,9 @@ body {
   background-color: var(--bg-color);
   display: grid;
   place-items: center;
+  background-image: url("../../../../public/images/weather.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* search section */
@@ -84,6 +87,9 @@ body {
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
+  box-shadow: rgba(43, 25, 36, 0.4) 5px 5px, rgba(12, 11, 11, 0.3) 10px 10px,
+    rgba(12, 4, 9, 0.2) 15px 15px, rgba(31, 27, 29, 0.1) 20px 20px,
+    rgba(10, 8, 9, 0.05) 25px 25px;
 
   & .weather-icon {
     height: 20rem;
