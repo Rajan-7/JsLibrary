@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist";
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(0, 0%, 0%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  & h1 {
+    font-size: 4.5rem;
+  }
+  & h4 {
+    font-size: 2.5rem;
+  }
+
+  & .sub-container {
+    height: 5rem;
+    width: 16rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #0766ad;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+
+    & .btn {
+      cursor: pointer;
+      height: 4rem;
+      width: 4rem;
+      border: none;
+      background-color: #0766ad;
+      border-radius: 0.5rem;
+      -webkit-border-radius: 0.5rem;
+      -moz-border-radius: 0.5rem;
+      -ms-border-radius: 0.5rem;
+      -o-border-radius: 0.5rem;
+    }
+
+    & .input {
+      height: 4rem;
+      width: 6rem;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    & .increment:hover {
+      background-color: #a8df8e;
+    }
+
+    & .decrement:hover {
+      background-color: #557c55;
+    }
+  }
+}
+
+.mb {
+  margin-bottom: 2rem;
+}
