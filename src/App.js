@@ -9,10 +9,11 @@
 // import UseState1 from "./components/useState/UseState1";
 // import UseStateRealUse from "./components/useState/UseStateRealUse";
 // import UseEffect1 from "./components/useEffect/useEffect1";
-import FinderEffect from "./components/useEffect/FinderEffect";
+// import FinderEffect from "./components/useEffect/FinderEffect";
+import Parent from "./components/UseContext/Parent";
 
 function App() {
-  return <FinderEffect />;
+  return <Parent />;
 }
 
 export default App;
