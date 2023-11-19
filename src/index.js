@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import store from "./components/Redux/store";
 import { Provider } from "react-redux";
+import "./index.css"
 
 store.subscribe(()=>store.getState());
 
