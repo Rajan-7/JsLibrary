@@ -10,10 +10,12 @@
 // import UseStateRealUse from "./components/useState/UseStateRealUse";
 // import UseEffect1 from "./components/useEffect/useEffect1";
 // import FinderEffect from "./components/useEffect/FinderEffect";
-import Parent from "./components/UseContext/Parent";
+// import Parent from "./components/UseContext/Parent";
+import UseReducer1 from "./components/useReducer/useReducer1";
+
 
 function App() {
-  return <Parent />;
+  return <UseReducer1 />;
 }
 
 export default App;
