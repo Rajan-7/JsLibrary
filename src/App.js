@@ -11,11 +11,13 @@
 // import UseEffect1 from "./components/useEffect/useEffect1";
 // import FinderEffect from "./components/useEffect/FinderEffect";
 // import Parent from "./components/UseContext/Parent";
-import UseReducer1 from "./components/useReducer/useReducer1";
+// import UseReducer1 from "./components/useReducer/useReducer1";
+// import UseRf from "./components/useRef/UseRf";
+import UseDom from "./components/useRef/UseDom";
 
 
 function App() {
-  return <UseReducer1 />;
+  return <UseDom />;
 }
 
 export default App;
