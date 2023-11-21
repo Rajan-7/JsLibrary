@@ -14,10 +14,11 @@
 // import UseReducer1 from "./components/Hooks/useReducer/useReducer1";
 // import UseRf from "./components/Hooks/useRef/UseRf";
 // import UseDom from "./components/Hooks/useRef/UseDom";
-import UseLayoutEffect from "./components/Hooks/useLayoutEffect/UseLayoutEffect";
+// import UseLayoutEffect from "./components/Hooks/useLayoutEffect/UseLayoutEffect";
+import UseMemo from "./components/Hooks/useMemo/UseMemo";
 
 function App() {
-  return <UseLayoutEffect />;
+  return <UseMemo/>;
 }
 
 export default App;
