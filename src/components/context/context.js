@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 
 const AppContext = createContext();
 
@@ -23,4 +23,9 @@ const AppProvider = ({ children }) => {
   return <AppContext.Provider value={combineData}>{children}</AppContext.Provider>;
 };
 
-export { AppContext, AppProvider };
+// custom Hook
+const useGlobalData = ()=>{
+  return useContext(AppContext);
+}
+
+export { AppContext, AppProvider,useGlobalData };

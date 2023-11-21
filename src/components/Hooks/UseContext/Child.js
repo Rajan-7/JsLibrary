@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { AppContext } from "../../context/context";
+import React from "react";
+import { useGlobalData } from "../../context/context";
 
 const Child = () => {
-  const user = useContext(AppContext);
+  const user = useGlobalData();
   const { userData } = user;
   console.log(userData);
   return (

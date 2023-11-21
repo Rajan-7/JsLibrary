@@ -1,10 +1,12 @@
-import React, {  useContext } from "react";
+import React from "react";
 import "./style.css";
 import Child from "./Child";
-import { AppContext } from "../../context/context";
+import {useGlobalData} from "../../context/context"
+
+
 
 const Parent = () => {
-  const use = useContext(AppContext);
+  const use = useGlobalData();
   const {parentData} = use;  
   
   return (

@@ -15,10 +15,13 @@
 // import UseRf from "./components/Hooks/useRef/UseRf";
 // import UseDom from "./components/Hooks/useRef/UseDom";
 // import UseLayoutEffect from "./components/Hooks/useLayoutEffect/UseLayoutEffect";
-import UseMemo from "./components/Hooks/useMemo/UseMemo";
+// import UseMemo from "./components/Hooks/useMemo/UseMemo";
+// import UseCallBack from "./components/Hooks/useCallBack/UseCallBack";
+
+import UseCallBack from "./components/Hooks/useCallBack/UseCallBack";
 
 function App() {
-  return <UseMemo/>;
+  return <UseCallBack />;
 }
 
 export default App;
