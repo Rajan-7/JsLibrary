@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { AppContext } from "../context/context";
+import { AppContext } from "../../context/context";
 
 const Child = () => {
   const user = useContext(AppContext);

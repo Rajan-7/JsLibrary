@@ -6,18 +6,18 @@
 // import Todo from "./components/Project/t0-do/Todo";
 // import Weather from "./components/Project/Weath3r/Weather";
 // import Redux from "./components/Redux/reduxapp/redux";
-// import UseState1 from "./components/useState/UseState1";
-// import UseStateRealUse from "./components/useState/UseStateRealUse";
-// import UseEffect1 from "./components/useEffect/useEffect1";
-// import FinderEffect from "./components/useEffect/FinderEffect";
-// import Parent from "./components/UseContext/Parent";
-// import UseReducer1 from "./components/useReducer/useReducer1";
-// import UseRf from "./components/useRef/UseRf";
-import UseDom from "./components/useRef/UseDom";
-
+// import UseState1 from "./components/Hooks/useState/UseState1";
+// import UseStateRealUse from "./components/Hooks/useState/UseStateRealUse";
+// import UseEffect1 from "./components/Hooks/useEffect/useEffect1";
+// import FinderEffect from "./components/Hooks/useEffect/FinderEffect";
+// import Parent from "./components/Hooks/UseContext/Parent";
+// import UseReducer1 from "./components/Hooks/useReducer/useReducer1";
+// import UseRf from "./components/Hooks/useRef/UseRf";
+// import UseDom from "./components/Hooks/useRef/UseDom";
+import UseLayoutEffect from "./components/Hooks/useLayoutEffect/UseLayoutEffect";
 
 function App() {
-  return <UseDom />;
+  return <UseLayoutEffect />;
 }
 
 export default App;

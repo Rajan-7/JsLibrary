@@ -3,10 +3,12 @@ import styled from "styled-components";
 
 const UseRf = () => {
   const [userInput, setUserInput] = useState("");
+  // const [count,setCount] = useState(0);
   const count = useRef(0);
 
   useEffect(() => {
     count.current = count.current + 1;
+    // setCount(count + 1);
   });
   return (
     <>

@@ -1,7 +1,7 @@
 import React, {  useContext } from "react";
 import "./style.css";
 import Child from "./Child";
-import { AppContext } from "../context/context";
+import { AppContext } from "../../context/context";
 
 const Parent = () => {
   const use = useContext(AppContext);
