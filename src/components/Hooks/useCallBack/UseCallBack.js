@@ -10,7 +10,7 @@ const UseCallBack = () => {
     setCount(count + 1);
   };
 
-  const addList = useCallback(() => {
+  const addList =useCallback( () => {
     return setList((prev) => [...prev, "My List"]);
   },[]);
 

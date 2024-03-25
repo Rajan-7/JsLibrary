@@ -97,15 +97,14 @@ img {
 .card-order {
   cursor: pointer;
   display: flex;
-  justify-content: end;
-
+  justify-content: flex-end;
 }
 
 .border {
   border: 1px solid #aaa;
-  &:hover{
-    color: #39A7FF;
-    background-color:#61677A;
+  &:hover {
+    color: #39a7ff;
+    background-color: #61677a;
   }
 }
 
@@ -127,7 +126,7 @@ img {
       background-color: #fff;
       border-right: 0rem;
       text-align: center;
-      padding: 0 .5rem;
+      padding: 0 0.5rem;
       text-transform: capitalize;
 
       &:first-child {
@@ -141,7 +140,7 @@ img {
       }
 
       &:hover {
-        border-bottom: 0.3rem solid #39A7FF;
+        border-bottom: 0.3rem solid #39a7ff;
       }
     }
   }

@@ -76,7 +76,7 @@ const Todo = () => {
       <div className="todo-container">
         <div className="todo-subcontainer">
           <figure>
-            <img src="./images/Todo.svg" alt="todo svg format picture" />
+            <img src="./images/Todo.svg" alt="" />
           </figure>
           <figcaption className="fig-cap">Add Your List Here ✌</figcaption>
 

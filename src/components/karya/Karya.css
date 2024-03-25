@@ -1,0 +1,18 @@
+.to-do{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-list{
+    margin-bottom: 20px;
+}
+
+.show-list{
+    display: flex;
+    padding-bottom: 10px;
+    gap:4px;
+}
+

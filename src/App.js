@@ -4,7 +4,6 @@
 // import UseReducer from "./components/Hooks/UseReducer";
 // import Calculator from "./components/Project/Calculator/Calculator";
 // import Todo from "./components/Project/t0-do/Todo";
-// import Weather from "./components/Project/Weath3r/Weather";
 // import Redux from "./components/Redux/reduxapp/redux";
 // import UseState1 from "./components/Hooks/useState/UseState1";
 // import UseStateRealUse from "./components/Hooks/useState/UseStateRealUse";
@@ -17,11 +16,12 @@
 // import UseLayoutEffect from "./components/Hooks/useLayoutEffect/UseLayoutEffect";
 // import UseMemo from "./components/Hooks/useMemo/UseMemo";
 // import UseCallBack from "./components/Hooks/useCallBack/UseCallBack";
+// import Resturant from "./components/Project/Resturant/Resturant";
+import Karya from "./components/karya/Karya";
 
-import UseCallBack from "./components/Hooks/useCallBack/UseCallBack";
 
 function App() {
-  return <UseCallBack />;
+  return <Karya />;
 }
 
 export default App;

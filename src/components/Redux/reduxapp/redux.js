@@ -13,11 +13,11 @@ const Redux = () => {
         <h4 className="mb">using React & redux</h4>
         <div className="sub-container">
           <button className="increment btn" title="Increment" onClick={()=>dispatch(incNumber(5))}>
-            <span><i class="fa-solid fa-plus"></i></span>
+            <span><i className="fa-solid fa-plus"></i></span>
           </button>
-          <input type="text" name="quantity" className="input" value={myState} />
+          <span className="input">{myState}</span>
           <button href="" className="decrement btn" title="Decrement" onClick={()=>dispatch(deccNumber(3))}>
-            <span><i class="fa-solid fa-minus"></i></span>
+            <span><i className="fa-solid fa-minus"></i></span>
           </button>
         </div>
       </div>

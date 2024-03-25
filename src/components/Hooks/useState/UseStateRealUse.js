@@ -88,11 +88,12 @@ const Wrapper = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:hsl(0,0%,94%);
+    color:#fff;
+    ${'' /* background-color:hsl(0,0%,94%); */}
   }
 
   .container {
-    height: 200px;
+    height: 300px;
     width: 300px;
     margin-top: -150px;
     border: 1px solid blue;
@@ -101,7 +102,7 @@ const Wrapper = styled.section`
     align-items: start;
     flex-direction: column;
     padding:20px;
-    background-color:grey;
+
   }
 
   .title {

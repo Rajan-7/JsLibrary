@@ -35,7 +35,7 @@ const Weather = () => {
 
   useEffect(() => {
     getWeatherInfo();
-  },[]);
+  });
   return (
     <>
       <div className="search">

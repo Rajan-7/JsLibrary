@@ -47,9 +47,6 @@ const WeatherCard = ({ weatherinfo }) => {
         case "Fog":
           setWeatherState("wi-fog");
           break;
-        case "Haze":
-          setWeatherState("wi-day-haze");
-          break;
         case "Storm":
           setWeatherState("wi-thunderstorm");
           break;

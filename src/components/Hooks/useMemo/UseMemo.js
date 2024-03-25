@@ -11,7 +11,7 @@ const UseMemo = () => {
         return num;
     }
 
-    const HandleNum =useMemo( ()=>{
+    const HandleNum = useMemo(()=>{
         return ActionNum(myNum);
     },[myNum])
   return (

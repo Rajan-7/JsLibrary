@@ -4,7 +4,7 @@ const initialState = 4;
 const changeMyNumber = (state = initialState, action) => {
   switch (action.type) {
     case "INCREMENT":
-      return state + action.payload;
+      return "Hello";
     case "DECREMENT":
       return state - action.payload;
     default:
